@@ -1,0 +1,35 @@
+body{
+    background-color: #232a52;
+
+}
+
+.center{
+        margin: 15%;
+        text-align: center;
+}
+
+h1{
+    color: #bec4e6;
+    font-size: 80px ;
+    margin-bottom: -15px;
+}
+h3{
+    color: #bec4e681;
+}
+
+button{
+    width: 50px;
+    height: 25px;
+    background-color: #16192a; 
+    color: #bec4e6; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type=button]{
+    background-color:#bec4e6;
+    border: none;
+    color:#232a52;
+    text-decoration: none;
+    cursor: pointer;
+  }
