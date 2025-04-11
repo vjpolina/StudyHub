@@ -15,16 +15,20 @@ h1{
 }
 h3{
     color: #818FB4;
+    margin-bottom: -15px;
 }
 
 button{
     width: 50px;
     height: 25px;
-    text-decoration: none;
-    background-color: #16192a; 
-    color: #bec4e6; 
-    border-radius: 10px;
     text-align: center;
+    text-decoration: none;
+    background-color: #F5E8C7; 
+    border: none;
+    color: #363062;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 input{
@@ -35,17 +39,30 @@ input{
     background-color: #F5E8C7; 
     color: #363062; 
     border: none;
+    ;
 }
 
 form[type=button]{
     text-decoration: none;
+    text-align: center;
     outline: none;
     border: none;
     width: 25px;
     height: 25px;
     border-radius: 10px;
-    background-color:#bec4e6;
+    background-color: #F5E8C7;
     border: none;
     color:#232a52;
     cursor: pointer;
   }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
