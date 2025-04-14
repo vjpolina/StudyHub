@@ -3,72 +3,59 @@ body{
 }
 h2{
     background-color: #F5E8C7; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #363062;
+    font-size: 30px;
+    text-align: center;
     border-radius: 5px;
     padding: 10px;
-    position: relative;
+    margin-bottom: -15px;
     gap: 20px;
 }
 
-.dropbtn{
-  flex: 10%;
-  font-size: 20px;
-    width: 100px;
-    height: 45px;
-    background-color: #363062;
-    border-radius: 10px;
+.menu{
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #F5E8C7;
+    border: none;
     text-align: center;
+    align-items: center;
+    color: #363062;
 }
+
+button{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F5E8C7; 
+    border: none;
+    color: #363062;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.7s ease-in-out;
+}
+
+button:hover {
+    background-color: #ead5a0; 
+    width: 125px;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade{
+  from {
+    background-color: #F5E8C7;
+  }
+  to {
+    background-color: #ead5a0;
+  }
+}
+
 .row {
     display: flex;
   }
   
-  .dropdown {
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    margin: 0;
-    flex: 10%;
-    text-align: center;
-    border-radius: 5px; 
-    padding: 5px;
-    position:fixed;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    visibility: hidden;
-    position: absolute;
-    font-size: 15px;
-    background-color: #8174a0;
-    min-width: 100px;
-    border-radius: 5px;
-    transition: visibility 0s, opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
-    transform: translateY(-10px);
-  }
-
-  .dropdown-content a {
-    color: #363062;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color:#f5e8c79a}
-  
-  .dropdown:hover .dropdown-content {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .dropdown:hover .dropbtn {
-    background-color:#818FB4;
-  }
-
 
   .notes {
     flex: 40%;
