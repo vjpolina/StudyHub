@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="StudyBoard" content="width=device-width, initial-scale=1.0">
     <title>StudyHub</title>
-    <link rel="stylesheet" href="C:/Users/PC/Desktop/practica/StudyHub/css/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\PC\Desktop\practica\StudyHub\css\style_index.css">
 </head>
 
 <body>
             <h2>Welcome to your StudyHub! <br>
                 <div class="menu">
-                <button href="login.html">Log out</button> |
-                <button href="index.html">Home</button> |
-                <button href="study.html">Resources</button> |
-                <button href="about_page.html">About us</button></div>
+                <a href="login.html"><button>Log out</button></a> |
+                <a href="index.html"><button>Home</button></a> |
+                <a href="study.html"><button>Resources</button></a> |
+                <a href="about_page.html"><button>About us</button></a></div>
             </h2>
     <br>
     <br>
     <p><div class="row">
         <div class="notes">
-            <i>Notes:</i> <br>
-            This will be the note section. Here, you'll be able to write down your thoughts, all while looking at the material on the right (where the conspects will be imported.)</div>
+            <div class="create_notes">
+                <button class="add">Create notes</button>
+                <div class="notes-container">
+                      <p contenteditable="true" class="input-box"><img src="C:\Users\PC\Desktop\practica\StudyHub\img\delete.png" class="deleteBtn"></p>
+                </div>
+            </div>   
+        </div>
         <div class="conspect">
             <i>Import PDF:</i><br>
             This will be the conspect/pdf section. As the title indicates, you'll be able to store a few pdfs here, and look at them while you study and take notes.</div>
         </div>
 
     </div>
+    <script src="C:\Users\PC\Desktop\practica\StudyHub\javascript\notes1.js"></script>
 </body>
 </html>
