@@ -1,8 +1,15 @@
+*{
+  color: #363062;
+  font-family: "Red Hat Mono", monospace;
+}
+
+
 body{
     background-color: #363062;
 }
 h2{
-    background-color: #F5E8C7; 
+    background-color: #F5E8C7;
+    font-weight: 400; 
     color: #363062;
     font-size: 30px;
     text-align: center;
@@ -22,7 +29,7 @@ h2{
     color: #363062;
 }
 
-button{
+.menu button{
     width: 100px;
     height: 25px;
     text-align: center;
@@ -37,9 +44,12 @@ button{
 }
 
 button:hover {
-    background-color: #ead5a0; 
+    background-color: #363062; 
+    color: #F5E8C7;
     width: 125px;
     animation-name: fade;
+    animation-duration: 0.5s;
+    animation-name: fadetext;
     animation-duration: 0.5s;
 }
 
@@ -48,12 +58,24 @@ button:hover {
     background-color: #F5E8C7;
   }
   to {
-    background-color: #ead5a0;
+    background-color: #363062;
+  }
+}
+
+@keyframes fade{
+  from {
+    color: #363062;
+  }
+  to {
+    color: #F5E8C7;
   }
 }
 
 .row {
     display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
   }
   
 
@@ -61,18 +83,105 @@ button:hover {
     flex: 40%;
     margin: 10px;
     text-align: center;
-    background-color: #F5E8C7; 
+    background:
+    repeating-linear-gradient(
+      0deg,
+      #F5E8C7,
+      #F5E8C7 25px,
+      #c6ba9a 1px,
+      #c6ba9a 26px
+    ); 
+    min-height: 500px;
+    max-height: max-content;
     border-radius: 5px; 
     text-align: left;
     padding: 10px;
+    align-items: center;
+    position: relative;
+  }
+  .create_notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px; 
+    text-align: left;
+    padding: 10px;
+  }
+  .create_notes image{
+    width: 10px;
+    height: 10px;
+  }
+  .create_notes button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    margin-top: -15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F5E8C7; 
+    border: #c6ba9a;
+    color: #363062;
+    outline: #c6ba9a solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .create_notes button:hover {
+      background-color: #363062; 
+      color: #F5E8C7;
+      width: 125px;
+      animation-name: fade;
+      animation-duration: 0.5s;
+      animation-name: fadetext;
+      animation-duration: 0.5s;
+  }
+
+  .notes-container {
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    max-height: fit-content;
+    align-items: center;
+    position: relative;
   }
 
   .conspect {
     flex: 60%;
     margin: 10px;
+    height: 500px;
     text-align: center;
     background-color: #F5E8C7; 
     border-radius: 5px; 
     text-align: left;
     padding: 10px;
   }
+
+  .input-box{
+    text-align: left;
+    position: relative;
+    margin-top: -1px;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    min-height: 115px;
+    max-height: max-content;
+    background-color: #f2e7cc;
+    outline:#c6ba9a dashed 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;}
+
+    .deleteBtn {
+      width: 25px;
+      height: auto;
+      bottom: 5px;
+      right: 10px;
+      position: absolute;
+      cursor: pointer;
+    }
