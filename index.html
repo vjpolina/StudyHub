@@ -24,15 +24,18 @@
     <p><div class="row">
         <div class="notes">
             <div class="create_notes">
-                <button class="add">Create notes</button>
+                <div class="add">
+                    <button>Create note</button>
+                </div>
                 <div class="notes-container">
-                      <p contenteditable="true" class="input-box"><img src="C:\Users\PC\Desktop\practica\StudyHub\img\delete.png" class="deleteBtn"></p>
+                      <p contenteditable="true" class="input-box" aria-placeholder="Type here..."><img src="C:\Users\PC\Desktop\practica\StudyHub\img\delete_final.png" class="deleteBtn"></p>
                 </div>
             </div>   
         </div>
         <div class="conspect">
-            <i>Import PDF:</i><br>
-            This will be the conspect/pdf section. As the title indicates, you'll be able to store a few pdfs here, and look at them while you study and take notes.</div>
+            <button class="importBtn">Import</button><br>
+            <button class="importFile"><input type="file" id="pdfInput" accept=".pdf" class="addfile"></button><br>
+        </div>
         </div>
 
     </div>
