@@ -43,7 +43,7 @@ h2{
     transition: width 0.7s ease-in-out;
 }
 
-button:hover {
+.menu button:hover {
     background-color: #363062; 
     color: #F5E8C7;
     width: 125px;
@@ -70,6 +70,7 @@ button:hover {
     color: #F5E8C7;
   }
 }
+
 
 .row {
     display: flex;
@@ -160,28 +161,96 @@ button:hover {
     padding: 10px;
   }
 
-  .input-box{
-    text-align: left;
+  .note-wrapper {
     position: relative;
-    margin-top: -1px;
-    width: 100%;
-    max-width: 600px;
-    height: 500px;
-    min-height: 115px;
-    max-height: max-content;
-    background-color: #f2e7cc;
-    outline:#c6ba9a dashed 2.5px;
-    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     border-radius: 5px;
     padding: 5px;
+    background-color: #f2e7cc;
+  }
+
+  .input-box{
+    flex: 1;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    padding: 5px;
     box-sizing: border-box;
-    resize: none;}
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    min-height: 100px;
+    max-height: 500px;
+    background-color: #f2e7cc;
+    outline:#c6ba9a dashed 2.5px;
+    border-radius: 5px;
+    resize: none;
+  }
 
     .deleteBtn {
       width: 25px;
       height: auto;
+      margin-left: 10px;
       bottom: 5px;
       right: 10px;
+      opacity: 0.5;
       position: absolute;
       cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+      animation-name: opacity;
+    }
+
+    @keyframes opacity {
+      from {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .deleteBtn:hover {
+      opacity: 1;
+    }
+
+    .importFile{
+      margin-top: 15px;
+      margin-bottom: 5px;
+      background-image: url(C:/Users/PC/Desktop/practica/StudyHub/img/addImg.png);
+      background-size: cover; 
+      border: none;
+      background-color: #ffffff00;
+      width: 210px;
+      height: 289px;
+    }
+
+    .importFile:hover{
+        background-color: #faeccf1a;
+        background-blend-mode: soft-light;
+    }
+
+    .addfile{
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .importBtn{
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #363062; 
+    border: none;
+    color: #F5E8C7;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out;
+    }
+
+    .importBtn:hover {
+      width: 120px;
     }
