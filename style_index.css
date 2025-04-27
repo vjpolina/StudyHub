@@ -81,7 +81,7 @@ h2{
   
 
   .notes {
-    flex: 40%;
+    flex: 60%;
     margin: 10px;
     text-align: center;
     background:
@@ -128,7 +128,7 @@ h2{
     outline: #c6ba9a solid 2px;
     border-radius: 10px;
     cursor: pointer;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.35s ease-in-out;
   }
   
   .create_notes button:hover {
@@ -151,14 +151,37 @@ h2{
   }
 
   .conspect {
-    flex: 60%;
+    flex: 40%;
     margin: 10px;
-    height: 500px;
+    min-height: 500px;
+    max-height: max-content;
     text-align: center;
     background-color: #F5E8C7; 
     border-radius: 5px; 
     text-align: left;
     padding: 10px;
+  }
+
+  .conspect-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f5e8c7;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+  .background-image {
+      margin: 10px;
+      position: relative;
+      display: block;
+      border: 1px dashed #c6ba9a;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 5px;
   }
 
   .note-wrapper {
@@ -182,7 +205,7 @@ h2{
     overflow-wrap: break-word;
     word-wrap: break-word;
     min-height: 100px;
-    max-height: 500px;
+    max-height: fit-content;
     background-color: #f2e7cc;
     outline:#c6ba9a dashed 2.5px;
     border-radius: 5px;
@@ -237,9 +260,11 @@ h2{
     }
 
     .importBtn{
-    width: 100px;
-    height: 25px;
+    width: 120px;
+    height: 40px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     background-color: #363062; 
@@ -247,10 +272,14 @@ h2{
     color: #F5E8C7;
     outline: none;
     border-radius: 10px;
+    margin-top: -6px;
     cursor: pointer;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.35s ease-in-out;
     }
 
     .importBtn:hover {
-      width: 120px;
+      width: 125px;
+      background-color: #F5E8C7;
+      color: #363062;
+      border: #c6ba9a solid 2px;
     }
