@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="StudyBoard" content="width=device-width, initial-scale=1.0">
+    <meta name="StudyHub" content="width=device-width, initial-scale=1.0">
     <title>StudyHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +33,11 @@
             </div>   
         </div>
         <div class="conspect">
-            <button class="importBtn">Import</button><br>
-            <button class="importFile"><input type="file" id="pdfInput" accept=".pdf" class="addfile"></button><br>
+            <button class="importBtn" id="import-button">Import</button>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" style="display: none;" id="image-input">
+            <div class="conspect-container">
+                <!-- images here -->
+            </div>
         </div>
         </div>
 
