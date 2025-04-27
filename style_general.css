@@ -1,0 +1,157 @@
+*{
+    color: #363062;
+    font-family: "Red Hat Mono", monospace;
+  }
+  
+  
+  body{
+      background-color: #363062;
+  }
+  h2{
+      background-color: #F5E8C7;
+      font-weight: 400; 
+      color: #363062;
+      font-size: 30px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: -15px;
+      gap: 20px;
+  }
+  
+  .menu{
+      font-size: 17px;
+      text-decoration: none;
+      background-color: #F5E8C7;
+      border: none;
+      text-align: center;
+      align-items: center;
+      color: #363062;
+  }
+  
+  .menu button{
+      width: 100px;
+      height: 25px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #F5E8C7; 
+      border: none;
+      color: #363062;
+      outline: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: width 0.7s ease-in-out;
+  }
+  
+  .menu button:hover {
+      background-color: #363062; 
+      color: #F5E8C7;
+      width: 125px;
+      animation-name: fade;
+      animation-duration: 0.5s;
+      animation-name: fadetext;
+      animation-duration: 0.5s;
+  }
+  
+  @keyframes fade{
+    from {
+      background-color: #F5E8C7;
+    }
+    to {
+      background-color: #363062;
+    }
+  }
+  
+  @keyframes fade{
+    from {
+      color: #363062;
+    }
+    to {
+      color: #F5E8C7;
+    }
+  }
+
+.textBlock{
+  color:#363062;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  border-radius: 7px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #F5E8C7;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  background-color: #F5E8C7;
+}
+
+.photos{
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.photos img{
+  width: 175px;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px;
+  padding: auto;
+}
+
+.text{
+  width: 1500px;
+  text-indent: 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.text p{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+
+.text button{
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F5E8C7; 
+  border: none;
+  color: #363062;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.7s ease-in-out;
+}
+
+.text button:hover {
+  background-color: #363062; 
+  color: #F5E8C7;
+  width: 125px;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-name: fadetext;
+  animation-duration: 0.5s;
+}
+
+h4{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
